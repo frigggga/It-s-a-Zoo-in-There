@@ -13,6 +13,10 @@
 		F969B4B92B57BF4E000E413B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F969B4B72B57BF4E000E413B /* Main.storyboard */; };
 		F969B4BB2B57BF51000E413B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F969B4BA2B57BF51000E413B /* Assets.xcassets */; };
 		F969B4BE2B57BF51000E413B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F969B4BC2B57BF51000E413B /* LaunchScreen.storyboard */; };
+		F969B4C92B57C753000E413B /* Cherry.wav in Resources */ = {isa = PBXBuildFile; fileRef = F969B4C62B57C752000E413B /* Cherry.wav */; };
+		F969B4CA2B57C753000E413B /* Zane.flac in Resources */ = {isa = PBXBuildFile; fileRef = F969B4C72B57C753000E413B /* Zane.flac */; };
+		F969B4CD2B57C79E000E413B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F969B4CC2B57C79E000E413B /* Animal.swift */; };
+		F969B4CF2B57D91E000E413B /* Brava.wav in Resources */ = {isa = PBXBuildFile; fileRef = F969B4CE2B57D91E000E413B /* Brava.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F969B4BA2B57BF51000E413B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F969B4BD2B57BF51000E413B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F969B4BF2B57BF51000E413B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F969B4C62B57C752000E413B /* Cherry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cherry.wav; sourceTree = "<group>"; };
+		F969B4C72B57C753000E413B /* Zane.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zane.flac; sourceTree = "<group>"; };
+		F969B4CC2B57C79E000E413B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		F969B4CE2B57D91E000E413B /* Brava.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Brava.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,24 @@
 				F969B4B12B57BF4E000E413B /* AppDelegate.swift */,
 				F969B4B32B57BF4E000E413B /* SceneDelegate.swift */,
 				F969B4B52B57BF4E000E413B /* ViewController.swift */,
+				F969B4CC2B57C79E000E413B /* Animal.swift */,
 				F969B4B72B57BF4E000E413B /* Main.storyboard */,
 				F969B4BA2B57BF51000E413B /* Assets.xcassets */,
 				F969B4BC2B57BF51000E413B /* LaunchScreen.storyboard */,
 				F969B4BF2B57BF51000E413B /* Info.plist */,
+				F969B4CB2B57C75E000E413B /* Sounds */,
 			);
 			path = "It's a Zoo in There";
+			sourceTree = "<group>";
+		};
+		F969B4CB2B57C75E000E413B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F969B4C62B57C752000E413B /* Cherry.wav */,
+				F969B4C72B57C753000E413B /* Zane.flac */,
+				F969B4CE2B57D91E000E413B /* Brava.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +145,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F969B4C92B57C753000E413B /* Cherry.wav in Resources */,
 				F969B4BE2B57BF51000E413B /* LaunchScreen.storyboard in Resources */,
 				F969B4BB2B57BF51000E413B /* Assets.xcassets in Resources */,
+				F969B4CA2B57C753000E413B /* Zane.flac in Resources */,
 				F969B4B92B57BF4E000E413B /* Main.storyboard in Resources */,
+				F969B4CF2B57D91E000E413B /* Brava.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F969B4B62B57BF4E000E413B /* ViewController.swift in Sources */,
+				F969B4CD2B57C79E000E413B /* Animal.swift in Sources */,
 				F969B4B22B57BF4E000E413B /* AppDelegate.swift in Sources */,
 				F969B4B42B57BF4E000E413B /* SceneDelegate.swift in Sources */,
 			);
@@ -298,8 +322,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +331,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isha.It-s-a-Zoo-in-There";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,8 +353,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +362,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isha.It-s-a-Zoo-in-There";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
